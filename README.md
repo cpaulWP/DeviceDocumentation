@@ -45,8 +45,10 @@ Static site generation for Wasatch Photonics devices and software.
     export PATH=~/miniconda2/bin:$PATH
     source activate pelican_env
     pip install pelican
-    pip install ghp-import
-    
+  
+    ### Critical - use the gh-pages branch!
+    git checkout gh-pages
+
     In one window, setup auto-reloader (excepting .conf files)
     pelican --autoreload --theme ../pelican-themes/pelican-bootstrap3/ content
     
@@ -57,6 +59,14 @@ Static site generation for Wasatch Photonics devices and software.
 ### Push to a github projects page
 
     pelican --theme ../pelican-themes/pelican-bootstrap3/ content
-    ghp-import -p output
-    
+    git commit -a -m "documenation log message..."
+    git push origin gh-pages
+
+### Miscellaneous notes
+
+    ghp-import looks good, sounds good, does what it says.
+    It also removes the CNAME file which makes it unusable for
+    organizational project pages. The solution adopted here is to do all
+    the development in gh-pages directly. This makes sense for this
+    project, as it is purely about documentation.
 
