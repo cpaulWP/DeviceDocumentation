@@ -27,7 +27,10 @@ DEFAULT_PAGINATION = 10
 
 
 BANNER = 'images/banner.png'
-STATIC_PATHS = ['images', 'files', 'extra/robots.txt', 'extra/favicon.ico', 'extra/custom.css']
+STATIC_PATHS = ['images', 'files', 'extra/robots.txt',
+        'extra/favicon.ico', 'extra/custom.css', 'extra/CNAME']
+
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 # Blogroll
 LINKS = None
