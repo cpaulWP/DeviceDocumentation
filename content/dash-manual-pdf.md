@@ -34,7 +34,7 @@ The Dash spectrrometer software is designed to provide
     - Windows will notify you that it is installing the driver software. This process may take a minute or two. Wait for it to finish and you will see the instrument connect in the software.
     
 ## 2. Software Interface
-The instrument should be connected to the computer through the USB and powered using the supplied power adapter. The software is launched using the Dash shortcut in the Programs or All Apps menus. At first startup, the user should expect to see an interface like the following.
+The instrument should be connected to the computer through the USB and powered using the supplied power adapter. The software is launched using the Dash shortcut in the Programs or All Apps menus. At first startup, the user should expect to see an interface like the following:
 
 ![Main Interface](images/gui_small.png)
 ![Controls Highlight 1](images/gui_1.png)
@@ -43,8 +43,8 @@ The instrument should be connected to the computer through the USB and powered u
 
 - **Red:** The main menu bar
 - **Blue:** Chart Options
-- **Center:** The center graph area is your reported spectra
-- **Yellow:** Integration time setting and reporting.
+- **Center:** The center graph area displays live data and selected spectra
+- **Yellow:** Integration time setting and reporting
 - **Green:** Data summary and performance metrics
 - **Teal:** Device Information
 - **Purple:** Primary control buttons
@@ -55,7 +55,7 @@ The instrument should be connected to the computer through the USB and powered u
 
 **Data Summary** area will display temperature readbacks, minimum and maximum reported values, as well as performance metrics. 
 
-**Device Information** area reports the instrument that is connected, along with it's serial number.
+**Device Information** area reports the model name and serial number of the instrument connected.
 
 **Primary Control Buttons** include the Laser power control, Options Interface Toggle, and spectra storage buttons.
 
@@ -67,12 +67,12 @@ There are seven tabs available under the Options Toggle button found in the purp
 - **IntegrationTime:** Time in milliseconds to integrate during capture.
 - **Offset:** Larger values move the spectrum upwards. Valid numbers can range from 0 to 65,533.
 - **Gain:** Digital gain value is a floating point. ranging from 0.0 to 10.0.
-- **CCD Setpoint:** When CCD cooling is available, this will specific the target temperature in degrees Celsisus
-- **CCD Cooling:** When CCD cooling is avilable, this will enable or disable this feature.
+- **Cooling Setpoint:** When CCD cooling is available, this will specify the target temperature in degrees Celsius
+- **Cooling:** When CCD cooling is avilable, this will enable or disable this feature.
 - **CCD Test Pattern:** Returns a ramping value to verify data connectivity.
 - **TEC Coefficients:** When CCD cooling is available, this configures the temperature setpoint conversion coefficients.
-- **External Trigger:** Specifies if an external trigger is to be used. This feature is only available on units with an IO option.
-- **DAC Value:** On instruments with an IO option, this will specific a voltage output from the spectrometer.
+- **Ext. Trigger:** Specifies if an external trigger is to be used. This feature is only available on units with an IO option.
+- **DAC Value:** On instruments with an IO option, this will specify a voltage output from the spectrometer.
 
 #### CMOS Options Tab
 ![CMOS](images/options_cmos.png)
@@ -86,7 +86,6 @@ There are seven tabs available under the Options Toggle button found in the purp
 #### Light Source Options Tab
 ![Light Source](images/options_light_source.png)
 - **Source Wavelength:** Specifies the source wavelength in nanometers for correct calibration in the Wavenumber view.
-
 #### Calibration Options Tab
 ![Calibration](images/options_calibrate.png)
 - Calibration coefficients should match those provided by Wasatch Photonics. If you change these values by accident. Search for your device on http://www.waspho.com/ using your instrument's serial number. This will list the coefficients used when your device was shipped.
