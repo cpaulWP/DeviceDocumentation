@@ -29,9 +29,11 @@ DEFAULT_PAGINATION = 10
 STATIC_PATHS = ['images', 'files', 'extra/robots.txt',
         'extra/favicon.ico', 'extra/custom.css', 'extra/CNAME']
 
+
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/CNAME': {'path': 'CNAME'},
 }
 
 # Blogroll
