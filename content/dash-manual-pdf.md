@@ -1,11 +1,12 @@
 Title: Dash version 3.0 Manual
 Date: 2013-02-01
 Category: Manuals
-save_as: index.html
+url: manuals/Dash3
+save_as: manuals/Dash3/index.html
 
 **We are currently developing a new version of the Dash manual.**
 
-[![Download](images/dash_pdf_download.png)](files/Dash Version 3 Manual.pdf)
+[![Download](/images/dash3_manual/dash_pdf_download.png)](files/Dash Version 3 Manual.pdf)
 
 # Dash Manual
 1. Introduction and Installation
@@ -32,7 +33,7 @@ The Dash spectrrometer software is designed to provide
     - Accept all of the defaults during installation
     - If prompted that the publisher of the driver could not be verified, **Select Install this driver software anyway**.
     
-![Verify Publisher Screen](images/verify.png)
+![Verify Publisher Screen](/images/dash3_manual/verify.png)
 
 3. Click **Finish** to launch the Dash application.
 4. Connect your instrument to your computer using the appropriate USB cable. 
@@ -41,10 +42,10 @@ The Dash spectrrometer software is designed to provide
 ## 2. Software Interface
 The instrument should be connected to the computer through the USB and powered using the supplied power adapter. The software is launched using the Dash shortcut in the Programs or All Apps menus. At first startup, the user should expect to see an interface like the following:
 
-![Main Interface](images/gui_small.png)
-![Controls Highlight 1](images/gui_1.png)
-![Controls Highlight 2](images/gui_2.png)
-![Controls Highlight 3](images/gui_3.png)
+![Main Interface](/images/dash3_manual/gui_small.png)
+![Controls Highlight 1](/images/dash3_manual/gui_1.png)
+![Controls Highlight 2](/images/dash3_manual/gui_2.png)
+![Controls Highlight 3](/images/dash3_manual/gui_3.png)
 
 - **Red:** The main menu bar
 - **Blue:** Chart Options
@@ -68,7 +69,7 @@ The instrument should be connected to the computer through the USB and powered u
 There are seven tabs available under the Options Toggle button found in the purple highlighted section.
 
 #### CCD Options Tab
-![CCD](images/options_ccd.png)
+![CCD](/images/dash3_manual/options_ccd.png)
 - **IntegrationTime:** Time in milliseconds to integrate during capture.
 - **Offset:** Larger values move the spectrum upwards. Valid numbers can range from 0 to 65,533.
 - **Gain:** Digital gain value is a floating point. ranging from 0.0 to 10.0.
@@ -80,7 +81,7 @@ There are seven tabs available under the Options Toggle button found in the purp
 - **DAC Value:** On instruments with an IO option, this will specify a voltage output from the spectrometer.
 
 #### CMOS Options Tab
-![CMOS](images/options_cmos.png)
+![CMOS](/images/dash3_manual/options_cmos.png)
 - **Offset:** Larger values will move the spectrum up, smaller numbers will move the spectrum down. Valid inputs range from 0 to 255.
 - **Gain:** Adjusts the gain of the CMOS sensor. Valid inputs range from 0 to 255.
 - **Line Time:** Time in microsconds for a single data capture.
@@ -89,28 +90,28 @@ There are seven tabs available under the Options Toggle button found in the purp
 - **Test Pattern:** Returns a ramp of values across the range of pixels.
 
 #### Light Source Options Tab
-![Light Source](images/options_light_source.png)
+![Light Source](/images/dash3_manual/options_light_source.png)
 - **Source Wavelength:** Specifies the source wavelength in nanometers for correct calibration in the Wavenumber view.
 #### Calibration Options Tab
-![Calibration](images/options_calibrate.png)
+![Calibration](/images/dash3_manual/options_calibrate.png)
 - Calibration coefficients should match those provided by Wasatch Photonics. If you change these values by accident. Search for your device on http://www.waspho.com/ using your instrument's serial number. This will list the coefficients used when your device was shipped.
 
 #### Acquisition Options Tab
-![Aquisition](images/options_acquire.png)
+![Aquisition](/images/dash3_manual/options_acquire.png)
 - **Record:** Specifies the number of acquisitions to store when the Record button is clicked or tapped.
 
 #### Logging Options Tab
-![Logging](images/options_logging.png)
+![Logging](/images/dash3_manual/options_logging.png)
 - Show detailed information on the Dash spectrometer control software underlying processes not usually shown to the user.
 
 #### InGaAs Options Tab
-![InGaAs](images/options_ingaas.png)
+![InGaAs](/images/dash3_manual/options_ingaas.png)
 - InGaAs sensor specific features.
 
 ### Recorded Data Area
 - Shows detailed information on recorded data.
 
-![Records](images/record_area.png) 
+![Records](/images/dash3_manual/record_area.png) 
 
 ## 3. Working with stored data
 
@@ -129,7 +130,7 @@ Consider the following narrative to create an average of 10 spectra: Go to the O
 ## 4. External input/output control
 On certain systems equipped with the External I/O board, the connection is shown in detail below:
 
-![External IO Board](images/io.png) 
+![External IO Board](/images/dash3_manual/io.png) 
 
 ## 5. Troubleshooting
 Please contact our systems division with any troubleshooting questions.
