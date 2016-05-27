@@ -1,3 +1,7 @@
+Title: Dash version 3.0 Manual
+Date: 2013-02-01
+Category: Manuals
+
 **We are currently developing a new version of the Dash manual.**
 
 [![Download](images/dash_pdf_download.png)](files/Dash Version 3 Manual.pdf)

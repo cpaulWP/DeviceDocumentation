@@ -1,6 +1,34 @@
 Static site generation for Wasatch Photonics devices and software.
 
 
+### Setup and configuration:
+
+Clone this repository into:
+~/projects/DeviceDocumentation
+
+Clone the wasatch pelican-themes fork into:
+git clone https://github.com/WasatchPhotonics/pelican-themes ~/projects/pelican-themes
+
+conda create --name pelican_env pip
+export PATH=~/miniconda2/bin:$PATH
+source activate pelican_env
+pip install pelican MarkDown ghp-import
+
+In one window, setup auto-reloader (excepting .conf files)
+source activate pelican_env
+cd ~/projects/DeviceDocumentation/
+pelican --autoreload --theme ../pelican-themes/wasatch-bootstrap3/ content
+
+In another window, set the pelican webserver:
+source activate pelican_env
+cd ~/projects/DeviceDocumentation/output
+python -m pelican.server
+
+Then in a web browser on the local machine, go to:
+http://localhost:8000
+
+
+
 ### CNAMEs, A-records and branches
 
     This is a project page, in a repository, owned by an organization.
@@ -8,7 +36,9 @@ Static site generation for Wasatch Photonics devices and software.
     The URL is WasatchPhotonics.github.io/DeviceDocumentation
 
     CNAME has to be in every branch. If you use ghp-import, you have to
-    manually add the CNAME file to the branch.
+    make sure the pelican configuration writes the CNAME file to the
+    root of the gh-pages branch. The content of the CNAME file should
+    be: devices.waspho.com
 
     The parent domain (for testing), is waspho.com.
     This content should appear at: devices.waspho.com
@@ -34,38 +64,17 @@ Static site generation for Wasatch Photonics devices and software.
     That's it, now devices.wasatchphotonics.com should point to this
     github gh-pages branch of the DeviceDocumentation repository.
 
-### Setup and configuration:
-
-    Clone this repository into:
-    ~/projects/DeviceDocumentation
-
-    Clone the pelican-themes repository into:
-    ~/projects/pelican-themes
-    
-    conda create --name pelican_env pelican
-    export PATH=~/miniconda2/bin:$PATH
-    source activate pelican_env
-    pip install pelican
-  
-    In one window, setup auto-reloader (excepting .conf files)
-    pelican --autoreload --theme ../pelican-themes/pelican-bootstrap3/ content
-    
-    In another window, set the pelican webserver:
-    python -m pelican.server
-
 
 ### Push to a github projects page
 
-    pelican --theme ../pelican-themes/pelican-bootstrap3/ content
-    git commit -a -m "documenation log message..."
-    git push origin gh-pages
+    pelican --theme ../pelican-themes/wasatch-bootstrap3/ content
+    git commit -a -m "documentation log message..."
+    git push origin master
 
-### Miscellaneous notes
+    ghp-import -p output
+    (Checkout gh-pages, copy the content from master, save the output in
+    the root of the gh-pages branch, upload to github)
 
-    ghp-import looks good, sounds good, does what it says.
-    It also removes the CNAME file which makes it unusable for
-    organizational project pages. The solution adopted here is to do all
-    the development in gh-pages directly. This makes sense for this
-    project, as it is purely about documentation.
-
+    This way you stay in master, make all your changes, preview locally.
+    When you are ready to go live, ghp-import is all you need.
 

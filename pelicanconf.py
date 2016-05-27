@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Nathan Harrington'
-AUTHORS = u'Nathan Harrington'
+AUTHOR = u'Wasatch Photonics'
+AUTHORS = u'Wasatch Photonics'
 SITENAME = u'Devices'
 SITEURL = ''
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = u'en'
 
@@ -26,11 +26,13 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 
-BANNER = 'images/banner.png'
 STATIC_PATHS = ['images', 'files', 'extra/robots.txt',
         'extra/favicon.ico', 'extra/custom.css', 'extra/CNAME']
 
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+}
 
 # Blogroll
 LINKS = None
@@ -43,3 +45,23 @@ SOCIAL = (('twitter', 'https://twitter.com/wasatchphotonic'),
           ('youtube', 'https://www.youtube.com/watch?v=-a69RZVyrZ8'),
           ('facebook', 'https://www.facebook.com/Wasatch-Photonics-155250911204558/'),
          )
+
+# Don't show generated categories in menu (like manuals)
+DISPLAY_CATEGORIES_ON_MENU=False
+
+# Show the colorful banner image on all pages
+#BANNER = 'images/wasatch_logo_rev_main.png'
+BANNER = 'images/banner.png'
+BANNER_ALL_PAGES = True
+BANNER_SUBTITLE = "Wasatch Photonics"
+
+# don't show any of the right side info
+HIDE_SIDEBAR=True
+
+#BOOTSTRAP_THEME="simplex"
+
+HIDE_SITENAME=True
+
+# This documentation is designed to be hosted in a sub domain of a root
+# domain.
+ROOT_URL="http://wasatchphotonics.com"

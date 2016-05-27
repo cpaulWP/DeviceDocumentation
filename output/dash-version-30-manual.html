@@ -11,17 +11,17 @@
 
 <link rel="canonical" href="/dash-version-30-manual.html">
 
-        <meta name="author" content="Nathan Harrington" />
-        <meta name="description" content="Here is the location of the original Dash version 3 Manual: The next generation development of Dash documentation is currently under development. Please check here for further updates." />
+        <meta name="author" content="Wasatch Photonics" />
+        <meta name="description" content="We are currently developing a new version of the Dash manual. Dash Manual Introduction and Installation Software Interface. Working with stored data. External Input/Output control. Troubleshooting. 1. Introduction The Dash spectrrometer software is designed to provide System Requirements Operating Systems: Windows 10, 8, and 7 Processor: Intel i7 Suggested ..." />
 
         <meta property="og:site_name" content="Devices" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="Dash version 3.0 Manual"/>
         <meta property="og:url" content="/dash-version-30-manual.html"/>
-        <meta property="og:description" content="Here is the location of the original Dash version 3 Manual: The next generation development of Dash documentation is currently under development. Please check here for further updates."/>
+        <meta property="og:description" content="We are currently developing a new version of the Dash manual. Dash Manual Introduction and Installation Software Interface. Working with stored data. External Input/Output control. Troubleshooting. 1. Introduction The Dash spectrrometer software is designed to provide System Requirements Operating Systems: Windows 10, 8, and 7 Processor: Intel i7 Suggested ..."/>
         <meta property="article:published_time" content="2013-02-01" />
             <meta property="article:section" content="Manuals" />
-            <meta property="article:author" content="Nathan Harrington" />
+            <meta property="article:author" content="Wasatch Photonics" />
 
 
     <!-- Bootstrap -->
@@ -48,13 +48,17 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="/" class="navbar-brand">
-Devices            </a>
+            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a href="/category/manuals.html">Manuals</a>
-                        </li>
+                <li>
+                    <div style="padding:10px">
+                        <a href="http://wasatchphotonics.com">
+                            <img src="/images/home-icon.png" height=30px> </img>
+                        </a>
+                    </div>
+                </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
@@ -64,10 +68,25 @@ Devices            </a>
     </div>
 </div> <!-- /.navbar -->
 <!-- Banner -->
-<!-- End Banner -->
+<style>
+	#banner{
+	    background-image:url("/images/banner.png");
+	}
+</style>
+
+<div id="banner">
+	<div class="container">
+        <!--
+		<div class="copy">
+			<h1>Devices</h1>
+				<p class="intro">Wasatch Photonics</p>
+		</div>
+        -->
+	</div>
+</div><!-- End Banner -->
 <div class="container">
     <div class="row">
-        <div class="col-sm-9">
+        <div class="col-lg-12">
     <section id="content">
         <article>
             <header class="page-header">
@@ -85,7 +104,7 @@ Devices            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2013-02-01T00:00:00+01:00"> Fri 01 February 2013</time>
+        <i class="fa fa-calendar"></i><time datetime="2013-02-01T00:00:00-05:00"> Fri 01 February 2013</time>
     </span>
 
 
@@ -95,48 +114,123 @@ Devices            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Here is the location of the original Dash version 3 Manual:</p>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-3">
-            <a href="/files/Dash Version 3 Manual.pdf"><img src="/images/dash_manual_cover_thumbnail.png"></a>
-        </div>
-        <div class="col-lg-3">
-        </div>
-    </div>
-</div>
-
-<p><BR></p>
-<h4>The next generation development of Dash documentation is currently under development. Please check here for further updates.</h4>
+                <p><strong>We are currently developing a new version of the Dash manual.</strong></p>
+<p><a href="files/Dash Version 3 Manual.pdf"><img alt="Download" src="images/dash_pdf_download.png" /></a></p>
+<h1>Dash Manual</h1>
+<ol>
+<li>Introduction and Installation</li>
+<li>Software Interface.</li>
+<li>Working with stored data.</li>
+<li>External Input/Output control.</li>
+<li>Troubleshooting.</li>
+</ol>
+<h2>1. Introduction</h2>
+<p>The Dash spectrrometer software is designed to provide </p>
+<h3>System Requirements</h3>
+<ul>
+<li><strong>Operating Systems:</strong> Windows 10, 8, and 7</li>
+<li><strong>Processor:</strong> Intel i7 Suggested</li>
+<li><strong>RAM:</strong> 4GB Required</li>
+</ul>
+<h2>Installation</h2>
+<p><strong>Dash installation has been verified on Windows 7x32, 7x64, 10x64.</strong></p>
+<ol>
+<li>Ensure that the spectrometer is <strong>not</strong> connected to the system.</li>
+<li>Run the provided Dash-setup.exe file.<ul>
+<li>Accept all of the defaults during installation</li>
+<li>If prompted that the publisher of the driver could not be verified, <strong>Select Install this driver software anyway</strong>.</li>
+</ul>
+</li>
+</ol>
+<p><img alt="Verify Publisher Screen" src="images/verify.png" /></p>
+<ol>
+<li>Click <strong>Finish</strong> to launch the Dash application.</li>
+<li>Connect your instrument to your computer using the appropriate USB cable. <ul>
+<li>Windows will notify you that it is installing the driver software. This process may take a minute or two. Wait for it to finish and you will see the instrument connect in the software.</li>
+</ul>
+</li>
+</ol>
+<h2>2. Software Interface</h2>
+<p>The instrument should be connected to the computer through the USB and powered using the supplied power adapter. The software is launched using the Dash shortcut in the Programs or All Apps menus. At first startup, the user should expect to see an interface like the following:</p>
+<p><img alt="Main Interface" src="images/gui_small.png" />
+<img alt="Controls Highlight 1" src="images/gui_1.png" />
+<img alt="Controls Highlight 2" src="images/gui_2.png" />
+<img alt="Controls Highlight 3" src="images/gui_3.png" /></p>
+<ul>
+<li><strong>Red:</strong> The main menu bar</li>
+<li><strong>Blue:</strong> Chart Options</li>
+<li><strong>Center:</strong> The center graph area displays live data and selected spectra</li>
+<li><strong>Yellow:</strong> Integration time setting and reporting</li>
+<li><strong>Green:</strong> Data summary and performance metrics</li>
+<li><strong>Teal:</strong> Device Information</li>
+<li><strong>Purple:</strong> Primary control buttons</li>
+</ul>
+<p><strong>The Main Menu Bar</strong> and <strong>Chart Options Toolbar</strong> are used to load and save data, as well as access chart viewing functions (such as auto-scaling).</p>
+<p><strong>Integration Time Setting and Reporting</strong> section allows you to specify (in ms) the length of the integration time of the image. Once this is set a counter will display how long until your next sample if your integration time is longer than 300ms.</p>
+<p><strong>Data Summary</strong> area will display temperature readbacks, minimum and maximum reported values, as well as performance metrics. </p>
+<p><strong>Device Information</strong> area reports the model name and serial number of the instrument connected.</p>
+<p><strong>Primary Control Buttons</strong> include the Laser power control, Options Interface Toggle, and spectra storage buttons.</p>
+<h3>Options Panel Description</h3>
+<p>There are seven tabs available under the Options Toggle button found in the purple highlighted section.</p>
+<h4>CCD Options Tab</h4>
+<p><img alt="CCD" src="images/options_ccd.png" />
+- <strong>IntegrationTime:</strong> Time in milliseconds to integrate during capture.
+- <strong>Offset:</strong> Larger values move the spectrum upwards. Valid numbers can range from 0 to 65,533.
+- <strong>Gain:</strong> Digital gain value is a floating point. ranging from 0.0 to 10.0.
+- <strong>Cooling Setpoint:</strong> When CCD cooling is available, this will specify the target temperature in degrees Celsius
+- <strong>Cooling:</strong> When CCD cooling is avilable, this will enable or disable this feature.
+- <strong>CCD Test Pattern:</strong> Returns a ramping value to verify data connectivity.
+- <strong>TEC Coefficients:</strong> When CCD cooling is available, this configures the temperature setpoint conversion coefficients.
+- <strong>Ext. Trigger:</strong> Specifies if an external trigger is to be used. This feature is only available on units with an IO option.
+- <strong>DAC Value:</strong> On instruments with an IO option, this will specify a voltage output from the spectrometer.</p>
+<h4>CMOS Options Tab</h4>
+<p><img alt="CMOS" src="images/options_cmos.png" />
+- <strong>Offset:</strong> Larger values will move the spectrum up, smaller numbers will move the spectrum down. Valid inputs range from 0 to 255.
+- <strong>Gain:</strong> Adjusts the gain of the CMOS sensor. Valid inputs range from 0 to 255.
+- <strong>Line Time:</strong> Time in microsconds for a single data capture.
+- <strong>Integration  Time:</strong> Time in microseconds to integrate during a capture. This must be less than the line time.
+- <strong>Trigger:</strong> Enables and disables the external trigger. This option is only valid with instruments equipped with an IO option.
+- <strong>Test Pattern:</strong> Returns a ramp of values across the range of pixels.</p>
+<h4>Light Source Options Tab</h4>
+<p><img alt="Light Source" src="images/options_light_source.png" />
+- <strong>Source Wavelength:</strong> Specifies the source wavelength in nanometers for correct calibration in the Wavenumber view.</p>
+<h4>Calibration Options Tab</h4>
+<p><img alt="Calibration" src="images/options_calibrate.png" />
+- Calibration coefficients should match those provided by Wasatch Photonics. If you change these values by accident. Search for your device on http://www.waspho.com/ using your instrument's serial number. This will list the coefficients used when your device was shipped.</p>
+<h4>Acquisition Options Tab</h4>
+<p><img alt="Aquisition" src="images/options_acquire.png" />
+- <strong>Record:</strong> Specifies the number of acquisitions to store when the Record button is clicked or tapped.</p>
+<h4>Logging Options Tab</h4>
+<p><img alt="Logging" src="images/options_logging.png" />
+- Show detailed information on the Dash spectrometer control software underlying processes not usually shown to the user.</p>
+<h4>InGaAs Options Tab</h4>
+<p><img alt="InGaAs" src="images/options_ingaas.png" />
+- InGaAs sensor specific features.</p>
+<h3>Recorded Data Area</h3>
+<ul>
+<li>Shows detailed information on recorded data.</li>
+</ul>
+<p><img alt="Records" src="images/record_area.png" /> </p>
+<h2>3. Working with stored data</h2>
+<h3>Overlaying spectra</h3>
+<p>After storing data using either the Store or Record tool, the stored data list will appear in the main interface. Select individual records by clicking on them, or use the shift and control buttons on your keyboard to select groups of records. After selection, click the <strong>Update Graph</strong> green button to show the selected entries in the main graph area. Double click the note field to type in notes specific for a data entry.</p>
+<h3>Subtracting blanks</h3>
+<p>The <strong>Make Blank</strong> button us used to assign a particular spectra from the history as a "Blank Spectra". This means that any spectra viewed after assigning a blank has the blank specta subtracted from it. To "unassign" a blank, choose the blank frame and hit the "make unblank" button. Note that if the spectra history is saved to file, only the raw data is saved, not the subtracted spectra. However, one can manually subtract spectra since all of the history, including annotations of which frame is blank spectra frame, is saved to file.</p>
+<h3>Deleting spectra</h3>
+<p>Use the Clear button to remove all spectra from the recorded data area and the delete selected spectra button to remove individual entries.</p>
+<h3>Averaging spectra</h3>
+<p>Consider the following narrative to create an average of 10 spectra: Go to the Options &gt; Acquisition tab, and set the record spectra control entry to 10. Position the sample as required, then click the Record button. Shift-click the first and last entries in the recorded spectra area, then click the Average button. The user will then see a new entry added in the recorded spectra area that comprises an average of the selected spectra, with an appropriate designation in the note field.</p>
+<h2>4. External input/output control</h2>
+<p>On certain systems equipped with the External I/O board, the connection is shown in detail below:</p>
+<p><img alt="External IO Board" src="images/io.png" /> </p>
+<h2>5. Troubleshooting</h2>
+<p>Please contact our systems division with any troubleshooting questions.</p>
+<p>info@wasatchphotonics.com </p>
             </div>
             <!-- /.entry-content -->
         </article>
     </section>
 
-        </div>
-        <div class="col-sm-3" id="sidebar">
-            <aside>
-
-<section class="well well-sm">
-    <ul class="list-group list-group-flush">
-            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
-              <ul class="list-group" id="social">
-                <li class="list-group-item"><a href="https://twitter.com/wasatchphotonic"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
-                <li class="list-group-item"><a href="https://www.linkedin.com/company/wasatch-photonics"><i class="fa fa-linkedin-square fa-lg"></i> linkedin</a></li>
-                <li class="list-group-item"><a href="https://plus.google.com/113901159584735714933/about"><i class="fa fa-google-plus-square fa-lg"></i> google-plus</a></li>
-                <li class="list-group-item"><a href="http://github.com/WasatchPhotonics"><i class="fa fa-github-square fa-lg"></i> github</a></li>
-                <li class="list-group-item"><a href="https://www.youtube.com/watch?v=-a69RZVyrZ8"><i class="fa fa-youtube-square fa-lg"></i> youtube</a></li>
-                <li class="list-group-item"><a href="https://www.facebook.com/Wasatch-Photonics-155250911204558/"><i class="fa fa-facebook-square fa-lg"></i> facebook</a></li>
-              </ul>
-            </li>
-
-
-
-
-
-    </ul>
-</section>
-            </aside>
         </div>
     </div>
 </div>
@@ -144,7 +238,7 @@ Devices            </a>
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2013 Nathan Harrington
+         <div class="col-xs-10">&copy; 2013 Wasatch Photonics
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
