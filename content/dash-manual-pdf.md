@@ -1,6 +1,7 @@
 Title: Dash version 3.0 Manual
 Date: 2013-02-01
 Category: Manuals
+save_as: index.html
 
 **We are currently developing a new version of the Dash manual.**
 
