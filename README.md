@@ -3,29 +3,29 @@ Static site generation for Wasatch Photonics devices and software.
 
 ### Setup and configuration:
 
-Clone this repository into:
-~/projects/DeviceDocumentation
+    Clone this repository into:
+    ~/projects/DeviceDocumentation
+    
+    Clone the wasatch pelican-themes fork into:
+    git clone https://github.com/WasatchPhotonics/pelican-themes ~/projects/pelican-themes
 
-Clone the wasatch pelican-themes fork into:
-git clone https://github.com/WasatchPhotonics/pelican-themes ~/projects/pelican-themes
-
-conda create --name pelican_env pip
-export PATH=~/miniconda2/bin:$PATH
-source activate pelican_env
-pip install pelican MarkDown ghp-import
-
-In one window, setup auto-reloader (excepting .conf files)
-source activate pelican_env
-cd ~/projects/DeviceDocumentation/
-pelican --autoreload --theme ../pelican-themes/wasatch-bootstrap3/ content
-
-In another window, set the pelican webserver:
-source activate pelican_env
-cd ~/projects/DeviceDocumentation/output
-python -m pelican.server
-
-Then in a web browser on the local machine, go to:
-http://localhost:8000
+    conda create --name pelican_env pip
+    export PATH=~/miniconda2/bin:$PATH
+    source activate pelican_env
+    pip install pelican MarkDown ghp-import
+    
+    In one window, setup auto-reloader (excepting .conf files)
+    source activate pelican_env
+    cd ~/projects/DeviceDocumentation/
+    pelican --autoreload --theme ../pelican-themes/wasatch-bootstrap3/ content
+    
+    In another window, set the pelican webserver:
+    source activate pelican_env
+    cd ~/projects/DeviceDocumentation/output
+    python -m pelican.server
+    
+    Then in a web browser on the local machine, go to:
+    http://localhost:8000
 
 
 
