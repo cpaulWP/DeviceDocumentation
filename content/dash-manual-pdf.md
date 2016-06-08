@@ -17,8 +17,7 @@ save_as: manuals/Dash3/index.html
 
 
 ## 1. Introduction
-
-The Dash spectrrometer software is designed to provide 
+The Dash software is designed to control the Wasatch Photonics series of spectrometers and provides a user interface to support typical operations necessary for spectroscopic data collection and analysis. 
 
 ### System Requirements
 - **Operating Systems:** Windows 10, 8, and 7
